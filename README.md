@@ -1,2 +1,3 @@
-# creative-os
-The Web OS
+# CreativeOS
+
+#### The Web OS
