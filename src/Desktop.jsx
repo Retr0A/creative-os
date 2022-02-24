@@ -1,8 +1,10 @@
 import React from 'react'
+import './Desktop.scss'
 
 function Desktop() {
   return (
-    <div className="desktop"></div>
+    <div className="desktop">
+    </div>
   )
 }
 
