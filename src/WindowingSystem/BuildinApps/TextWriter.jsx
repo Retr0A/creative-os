@@ -1,5 +1,5 @@
 import React from 'react'
-import Draggable, {DraggableCore} from 'react-draggable'
+import Draggable from 'react-draggable'
 import '../Window.scss'
 
 export default class TextWriter extends React.Component {
