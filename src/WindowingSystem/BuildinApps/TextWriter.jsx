@@ -1,20 +1,31 @@
 import React from 'react'
 import Draggable from 'react-draggable'
 import '../Window.scss'
+import './TextWriter.scss'
 
 export default class TextWriter extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.closeFunc = props.closeFunc;
+    this.index = props.index;
+  }
+
   render() {
     return (
       <Draggable
       defaultPosition={{x: 80, y: 80}}
-      handle=".topWindowBar">
+      handle=".topSideWindowBar"
+      bounds=".windowManager">
       <div className="window">
           <div className="topWindowBar">
-              <button className="closeWindowButton">X</button>
-              <h4 className="windowTitle">Text Writer</h4>
+              <button onClick={() => this.closeFunc(this.index)} className="closeWindowButton">X</button>
+              <div className="topSideWindowBar">
+                <h4 className="windowTitle">{this.index} Text Writer</h4>
+              </div>
           </div>
           <div className="windowContent">
-            <h1>Window Content</h1>
+            <textarea className="textwriterText"></textarea>
           </div>
       </div>
       </Draggable>
