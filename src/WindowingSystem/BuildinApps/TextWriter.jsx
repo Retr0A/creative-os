@@ -21,11 +21,13 @@ export default class TextWriter extends React.Component {
           <div className="topWindowBar">
               <button onClick={() => this.closeFunc(this.index)} className="closeWindowButton">X</button>
               <div className="topSideWindowBar">
-                <h4 className="windowTitle">{this.index} Text Writer</h4>
+                <h4 className="windowTitle">Text Writer</h4>
               </div>
           </div>
           <div className="windowContent">
+            { /*Content Here*/ }
             <textarea className="textwriterText"></textarea>
+            { /*---*/ }
           </div>
       </div>
       </Draggable>

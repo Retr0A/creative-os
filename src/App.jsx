@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       <Desktop/>
-      <WindowManager/>
+      <WindowManager/>;
       <Taskbar/>
     </div>
   );

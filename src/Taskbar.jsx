@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Taskbar.scss'
 
-function Taskbar() {
+function Taskbar({ windowManager }) {
 
   const [openedWindows, setOpenedWindows] = useState([
     //{ openedWindow: "" }
@@ -22,7 +22,7 @@ function Taskbar() {
       <button className="menuButton">+</button>
 
       {openedWindows.map((singleWindow, index) => (
-        <h1>Sus</h1>
+        <h1>Test</h1>
       ))}
     </div>
   )
